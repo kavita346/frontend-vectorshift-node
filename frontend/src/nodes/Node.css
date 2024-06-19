@@ -1,0 +1,47 @@
+.node {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 1rem;
+    background-color: rgb(255 255 255 / 22%);
+    color: white;
+    font-weight: bolder;
+}
+hr {
+    width: 100%;
+    margin: 0;
+    border-top: solid .5px white;
+}
+.children {
+
+    display: flex;
+    padding: 1rem;
+    flex: 1;
+    flex-flow: column;
+    row-gap: 1rem;
+
+}
+.header{
+
+    width: auto;
+    padding: .5rem ;
+}
+
+.node-Input{
+    @extend .node;
+    background-color: rgba(255, 72, 252, 0.22);
+}
+
+
+.node-Output{
+    @extend .node;
+    background-color: rgba(139, 255, 72, 0.22);
+}
+
+
+.node-LLM{
+    @extend .node;
+    background-color: rgba(255, 222, 34, 0.22);
+}
